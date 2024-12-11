@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famine's Forest</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="CSS/Stylesheet.css">
+</head>
+<nav>
+
+</nav>
+<header>
+  <div class="container" id="Title">
+        <div class="col-sm-12">
+          <h1>Famine's Forest</h1>
+        </div>
+        <div class="colomn-sm-12">
+         <p>A Mad Lib</p>
+        </div> 
+</div>
+</header>
+<body onload="hidestory()">
+<img id="divider" src="images\Drawing.png" alt="">
+<div class="container" id="options">
+    <p>Fulfill the demands</p>
+    <form action="javascript:write();">
+    <div class="form-group">
+      <label for="adjective">name:</label>
+      <input type="text" class="form-control" id="name">
+    </div>
+    <div class="form-group">
+      <label for="adjective">character description:</label>
+      <input type="text" class="form-control" id="character">
+    </div>
+    <div class="form-group">
+      <label for="adjective">adjactive:</label>
+      <input type="text" class="form-control" id="adjective">
+    </div>
+    <div class="form-group">
+      <label for="noun">noun:</label>
+      <input type="text" class="form-control" id="noun">
+    </div>
+    <div class="form-group">
+      <label for="sin">sin:</label>
+      <input type="text" class="form-control" id="sin">
+    </div>
+    <div class="form-group">
+      <label for="noun">place:</label>
+      <input type="text" class="form-control" id="place">
+    </div>
+    <div class="form-group">
+      <label for="noun">noise:</label>
+      <input type="text" class="form-control" id="noise">
+    </div>
+    <div class="form-group">
+      <label for="noun">somthing soft:</label>
+      <input type="text" class="form-control" id="soft">
+    </div>
+    <div class="form-group">
+      <label for="noun">protein:</label>
+      <input type="text" class="form-control" id="pro">
+    </div>
+    <div class="form-group">
+      <label for="noun">object:</label>
+      <input type="text" class="form-control" id="obj">
+    </div>
+    <div class="form-group">
+      <p>gender:</p>
+      <div class="form-check">
+          <label for="male" class="form-check-label">
+              <input type="radio" class="form-check-input" name="gender" id="male"
+              value="man"> male
+          </label>
+      </div>
+    <div class="form-group">
+      <div class="form-check">
+          <label for="female" class="form-check-label">
+              <input type="radio" class="form-check-input" name="gender" id="female"
+              value="woman"> female
+          </label>
+      </div>
+    </div>
+    </div>
+  <button type="submit" onclick="hideDiv(); revealDiv();"><img src="images\Disembark button.png" alt=""></button>
+</form>
+</div>
+<div class="container" id="story">
+      <p id="text"> </p>
+</div>
+<img id="divider" src="images\Drawing.png" alt="">
+<script src="js/FormHandler.js"></script>
+<footer>
+  <div class="container" id="nav">
+  <nav>
+  <a href="https://djpl-75.github.io/scripting24/MadLibs/MadLibs/">Refresh</a>
+  </nav>
+  </div>
+</footer>
+</body>
+</html>
